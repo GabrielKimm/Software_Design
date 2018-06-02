@@ -22,7 +22,7 @@
 
 
 ## Links
-* Null
+* [시리얼 통신 튜토리얼](https://kocoafab.cc/tutorial/view/596): 아두이노 - 자바 시리얼통신 참고자료
 
 
 
