@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text fill="#4db552" strokeType="OUTSIDE" strokeWidth="0.0" text="Apuri Control Center" textAlignment="CENTER" wrappingWidth="400.12109375">
+         <font>
+            <Font name="Consolas Bold" size="32.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="5.0" top="5.0" />
+         </VBox.margin>
+      </Text>
+      <TabPane prefHeight="469.0" prefWidth="400.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+            <Tab text="  Home  ">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6aa3ff" height="84.0" layoutY="-39.0" stroke="#6aa3ff" strokeType="INSIDE" width="390.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0" />
+                        <Text fill="#2509f8" layoutX="22.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apuri" wrappingWidth="167.12109375">
+                           <font>
+                              <Font size="52.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#2509f8" layoutX="171.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Disconnected" visible="false" wrappingWidth="205.12109375">
+                           <font>
+                              <Font size="31.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#0af711" layoutX="171.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="connected" textAlignment="RIGHT" wrappingWidth="205.12109375">
+                           <font>
+                              <Font size="31.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="32.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AirQuality" wrappingWidth="167.12109375">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="32.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PM. Info" wrappingWidth="167.12109375">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="32.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mode" wrappingWidth="167.12109375">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#5cd76d" layoutX="228.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Normal" wrappingWidth="141.12109375">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="287.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ug/m^3" textAlignment="RIGHT" wrappingWidth="81.12109375">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <TextField editable="false" layoutX="200.0" layoutY="214.0" prefHeight="23.0" prefWidth="75.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                        <Text fill="#3943cd" layoutX="228.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Turbo" wrappingWidth="141.12109375">
+                           <font>
+                              <Font name="System Bold" size="33.0" />
+                           </font>
+                        </Text>
+                        <Button layoutX="24.0" layoutY="363.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="163.0" text="Mode Change">
+                           <font>
+                              <Font name="Consolas Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="217.0" layoutY="363.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="163.0" text="Stop Device">
+                           <font>
+                              <Font name="Consolas Bold" size="20.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="  My Apuri  ">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="161.0" fitWidth="148.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@공기청정기아이콘.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="135.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Model">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="135.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Serial No">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="135.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Activated date">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Text>
+                        <TextField editable="false" layoutX="245.0" layoutY="28.0">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </TextField>
+                        <TextField editable="false" layoutX="244.0" layoutY="66.0" prefHeight="32.0" prefWidth="142.0">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </TextField>
+                        <TextField editable="false" layoutX="298.0" layoutY="104.0" prefHeight="34.0" prefWidth="88.0">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </TextField>
+                        <Text layoutX="14.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adaptive Filter Spec">
+                           <font>
+                              <Font name="Consolas Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="14.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Filter Purchase Site">
+                           <font>
+                              <Font name="Consolas Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <TextField editable="false" layoutX="230.0" layoutY="227.0" prefHeight="23.0" prefWidth="151.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                        <TextField editable="false" layoutX="230.0" layoutY="272.0" prefHeight="23.0" prefWidth="151.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="  Setting  ">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Text layoutX="25.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shutdown Timmer">
+                           <font>
+                              <Font name="Consolas Bold" size="22.0" />
+                           </font>
+                        </Text>
+                        <RadioButton layoutX="25.0" layoutY="270.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="97.0" text="30 minutes" />
+                        <RadioButton layoutX="25.0" layoutY="299.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="97.0" text="60 minutes" />
+                        <RadioButton layoutX="25.0" layoutY="328.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="97.0" text="90 minutes" />
+                        <RadioButton layoutX="25.0" layoutY="357.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="97.0" text="120 minutes" />
+                        <RadioButton layoutX="25.0" layoutY="386.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="97.0" text="150 minutes" />
+                        <Text layoutX="25.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Communication Select">
+                           <font>
+                              <Font name="Consolas Bold" size="22.0" />
+                           </font>
+                        </Text>
+                        <RadioButton layoutX="28.0" layoutY="42.0" mnemonicParsing="false" text="Blutetooth" />
+                        <Text layoutX="25.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Device List">
+                           <font>
+                              <Font name="Consolas Bold" size="22.0" />
+                           </font>
+                        </Text>
+                        <ListView layoutX="22.0" layoutY="107.0" prefHeight="116.0" prefWidth="200.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="  Info  ">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Text layoutX="16.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Developed By Minsu Kim" wrappingWidth="367.12109375">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="16.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Version is 1.0 alpa" wrappingWidth="367.12109375">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="16.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact: rlaalstn9601@gmail.com" wrappingWidth="367.12109375">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="16.0" layoutY="385.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thank you for use" wrappingWidth="367.12109375">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </TabPane>
+   </children>
+</VBox>
